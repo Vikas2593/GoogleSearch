@@ -5,6 +5,7 @@ import java.awt.Desktop.Action;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
 
+import org.jetbrains.annotations.TestOnly;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -16,6 +17,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class GoogleSearch {
 	  
+	  @TestOnly
 	  public static void main(String arg[]) throws InterruptedException, AWTException {
 	    // Optional. If not specified, WebDriver searches the PATH for chromedriver.
 	    System.setProperty("webdriver.chrome.driver", "/home/vikas/Downloads/chromedriver_linux64/chromedriver");
